@@ -1,0 +1,17 @@
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\bin\Debug\Parcial1-Ap1.exe.config
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\bin\Debug\Parcial1-Ap1.exe
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\bin\Debug\Parcial1-Ap1.pdb
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\bin\Debug\EntityFramework.dll
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\bin\Debug\EntityFramework.xml
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1-Ap1.csprojAssemblyReference.cache
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1_Ap1.MenuForm.resources
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1_Ap1.Properties.Resources.resources
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1_Ap1.UI.Registros.rEvaluacion.resources
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1-Ap1.csproj.GenerateResource.cache
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1-Ap1.csproj.CoreCompileInputs.cache
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1-Ap1.csproj.CopyComplete
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1-Ap1.exe
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1-Ap1.pdb
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Parcial1-Ap1\Parcial1-Ap1\Parcial1-Ap1\obj\Debug\Parcial1_Ap1.UI.Consultas.cEvaluacion.resources
