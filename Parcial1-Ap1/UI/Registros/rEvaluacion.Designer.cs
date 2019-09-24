@@ -98,7 +98,7 @@
             this.CalificacionGroupBox.Size = new System.Drawing.Size(433, 130);
             this.CalificacionGroupBox.TabIndex = 3;
             this.CalificacionGroupBox.TabStop = false;
-            this.CalificacionGroupBox.Text = "Calificacion";
+            this.CalificacionGroupBox.Text = "Calificación tareas y parcial ";
             this.CalificacionGroupBox.Enter += new System.EventHandler(this.CalificacionGroupBox_Enter);
             // 
             // EstudianteTextBox
