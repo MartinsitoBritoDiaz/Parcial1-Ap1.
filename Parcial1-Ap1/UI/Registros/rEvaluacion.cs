@@ -32,7 +32,7 @@ namespace Parcial1_Ap1.UI.Registros
             ValorTextBox.Text = string.Empty;
             LogradoTextBox.Text = string.Empty;
             PerdidoTextBox.Text = string.Empty;
-            PronosticoComboBox.SelectedIndex = 0;
+            PronosticoComboBox.ResetText();
             MyErrorProvider.Clear();
         }
 
@@ -99,6 +99,20 @@ namespace Parcial1_Ap1.UI.Registros
                 paso = false;
             }
 
+            if(Convert.ToDecimal(ValorTextBox.Text) <= 0)
+            {
+                MyErrorProvider.SetError(ValorTextBox, "El campo valor no puede ser menor que cero o igual a cero");
+                ValorTextBox.Focus();
+                paso = false;
+            }
+
+            if (Convert.ToDecimal(LogradoTextBox.Text) < 0)
+            {
+                MyErrorProvider.SetError(LogradoTextBox, "El campo logrado no puede ser menor que cero");
+                LogradoTextBox.Focus();
+                paso = false;
+            }
+
             return paso;
         }
 
@@ -151,8 +165,9 @@ namespace Parcial1_Ap1.UI.Registros
 
             Limpiar();
 
-            if (EvaluacionBLL.Eliminar(id))
+            if(EvaluacionBLL.Buscar(id) != null)
             {
+                EvaluacionBLL.Eliminar(id);
                 MessageBox.Show("Eliminado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -194,6 +209,69 @@ namespace Parcial1_Ap1.UI.Registros
 
         private void PerdidoTextBox_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void ValorTextBox_TextChanged(object sender, EventArgs e)
+        {
+            decimal valor;
+            decimal logrado;
+
+            if(LogradoTextBox.Text == "")
+                logrado = 0;
+            else
+                logrado = Convert.ToDecimal(LogradoTextBox.Text);
+
+            if (ValorTextBox.Text == "")
+                valor = 0;
+            else
+                valor = Convert.ToDecimal(ValorTextBox.Text);
+
+            if (ValorTextBox.Text.Trim().Length > 0 && LogradoTextBox.Text.Trim().Length == 0)
+            {
+                PerdidoTextBox.Text = Convert.ToString(valor);
+                PronosticoComboBox.SelectedIndex = EvaluacionBLL.CalcularPronostico(valor, 0);
+            }
+            else
+            {
+                PronosticoComboBox.SelectedIndex = EvaluacionBLL.CalcularPronostico(valor, logrado);
+                PerdidoTextBox.Text = Convert.ToString(valor - logrado);
+            }
+            
+        }
+
+        private void LogradoTextBox_TextChanged(object sender, EventArgs e)
+        {
+            decimal valor;
+            decimal logrado;
+
+            if (LogradoTextBox.Text == "")
+                logrado = 0;
+            else
+                logrado = Convert.ToDecimal(LogradoTextBox.Text);
+
+            if (ValorTextBox.Text == "")
+                valor = 0;
+            else
+                valor = Convert.ToDecimal(ValorTextBox.Text);
+
+            if (LogradoTextBox.Text.Trim().Length > 0 && ValorTextBox.Text.Trim().Length == 0)
+            {
+                PronosticoComboBox.SelectedIndex = EvaluacionBLL.CalcularPronostico(valor, 0);
+                LogradoTextBox.Text = ValorTextBox.Text;
+            }
+            else
+            {                
+                if (logrado > valor)
+                {
+                    PronosticoComboBox.SelectedIndex = EvaluacionBLL.CalcularPronostico(valor, valor);
+                    PerdidoTextBox.Text = Convert.ToString(valor);
+                }
+                else
+                {
+                    PronosticoComboBox.SelectedIndex = EvaluacionBLL.CalcularPronostico(valor, logrado);
+                    PerdidoTextBox.Text = Convert.ToString(valor - logrado);
+                }         
+            }       
         }
     }
 }

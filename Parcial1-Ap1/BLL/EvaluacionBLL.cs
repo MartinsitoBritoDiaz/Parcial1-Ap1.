@@ -128,6 +128,9 @@ namespace Parcial1_Ap1.BLL
 
         public static int CalcularPronostico(decimal valor, decimal logrado)
         {
+            if (valor == 0)
+                valor = 1;
+
             decimal promedio = (((valor - logrado) * 100) / valor);
             int indice = 0;
 

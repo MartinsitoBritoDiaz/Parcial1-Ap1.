@@ -33,18 +33,18 @@
             this.FechaLabel = new System.Windows.Forms.Label();
             this.EstudianteLabel = new System.Windows.Forms.Label();
             this.CalificacionGroupBox = new System.Windows.Forms.GroupBox();
+            this.SignoIgualLabel = new System.Windows.Forms.Label();
+            this.SignoMenosLabel = new System.Windows.Forms.Label();
+            this.PerdidoTextBox = new System.Windows.Forms.TextBox();
+            this.LogradoTextBox = new System.Windows.Forms.TextBox();
+            this.ValorTextBox = new System.Windows.Forms.TextBox();
+            this.PerdidoLabel = new System.Windows.Forms.Label();
+            this.LogradoLabel = new System.Windows.Forms.Label();
+            this.ValorLabel = new System.Windows.Forms.Label();
             this.EstudianteTextBox = new System.Windows.Forms.TextBox();
             this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.FechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.ValorLabel = new System.Windows.Forms.Label();
-            this.LogradoLabel = new System.Windows.Forms.Label();
-            this.PerdidoLabel = new System.Windows.Forms.Label();
-            this.ValorTextBox = new System.Windows.Forms.TextBox();
-            this.LogradoTextBox = new System.Windows.Forms.TextBox();
-            this.PerdidoTextBox = new System.Windows.Forms.TextBox();
-            this.SignoMenosLabel = new System.Windows.Forms.Label();
-            this.SignoIgualLabel = new System.Windows.Forms.Label();
             this.PorComoLabel = new System.Windows.Forms.Label();
             this.PronosticoComboBox = new System.Windows.Forms.ComboBox();
             this.NuevoButton = new System.Windows.Forms.Button();
@@ -101,6 +101,76 @@
             this.CalificacionGroupBox.Text = "Calificación tareas y parcial ";
             this.CalificacionGroupBox.Enter += new System.EventHandler(this.CalificacionGroupBox_Enter);
             // 
+            // SignoIgualLabel
+            // 
+            this.SignoIgualLabel.AutoSize = true;
+            this.SignoIgualLabel.Location = new System.Drawing.Point(278, 79);
+            this.SignoIgualLabel.Name = "SignoIgualLabel";
+            this.SignoIgualLabel.Size = new System.Drawing.Size(16, 17);
+            this.SignoIgualLabel.TabIndex = 10;
+            this.SignoIgualLabel.Text = "=";
+            // 
+            // SignoMenosLabel
+            // 
+            this.SignoMenosLabel.AutoSize = true;
+            this.SignoMenosLabel.Location = new System.Drawing.Point(130, 79);
+            this.SignoMenosLabel.Name = "SignoMenosLabel";
+            this.SignoMenosLabel.Size = new System.Drawing.Size(13, 17);
+            this.SignoMenosLabel.TabIndex = 9;
+            this.SignoMenosLabel.Text = "-";
+            // 
+            // PerdidoTextBox
+            // 
+            this.PerdidoTextBox.Location = new System.Drawing.Point(334, 76);
+            this.PerdidoTextBox.Name = "PerdidoTextBox";
+            this.PerdidoTextBox.ReadOnly = true;
+            this.PerdidoTextBox.Size = new System.Drawing.Size(83, 22);
+            this.PerdidoTextBox.TabIndex = 8;
+            this.PerdidoTextBox.TextChanged += new System.EventHandler(this.PerdidoTextBox_TextChanged);
+            // 
+            // LogradoTextBox
+            // 
+            this.LogradoTextBox.Location = new System.Drawing.Point(161, 76);
+            this.LogradoTextBox.Name = "LogradoTextBox";
+            this.LogradoTextBox.Size = new System.Drawing.Size(83, 22);
+            this.LogradoTextBox.TabIndex = 7;
+            this.LogradoTextBox.TextChanged += new System.EventHandler(this.LogradoTextBox_TextChanged);
+            // 
+            // ValorTextBox
+            // 
+            this.ValorTextBox.Location = new System.Drawing.Point(25, 76);
+            this.ValorTextBox.Name = "ValorTextBox";
+            this.ValorTextBox.Size = new System.Drawing.Size(83, 22);
+            this.ValorTextBox.TabIndex = 6;
+            this.ValorTextBox.TextChanged += new System.EventHandler(this.ValorTextBox_TextChanged);
+            // 
+            // PerdidoLabel
+            // 
+            this.PerdidoLabel.AutoSize = true;
+            this.PerdidoLabel.Location = new System.Drawing.Point(331, 38);
+            this.PerdidoLabel.Name = "PerdidoLabel";
+            this.PerdidoLabel.Size = new System.Drawing.Size(57, 17);
+            this.PerdidoLabel.TabIndex = 5;
+            this.PerdidoLabel.Text = "Perdido";
+            // 
+            // LogradoLabel
+            // 
+            this.LogradoLabel.AutoSize = true;
+            this.LogradoLabel.Location = new System.Drawing.Point(158, 38);
+            this.LogradoLabel.Name = "LogradoLabel";
+            this.LogradoLabel.Size = new System.Drawing.Size(61, 17);
+            this.LogradoLabel.TabIndex = 4;
+            this.LogradoLabel.Text = "Logrado";
+            // 
+            // ValorLabel
+            // 
+            this.ValorLabel.AutoSize = true;
+            this.ValorLabel.Location = new System.Drawing.Point(22, 38);
+            this.ValorLabel.Name = "ValorLabel";
+            this.ValorLabel.Size = new System.Drawing.Size(41, 17);
+            this.ValorLabel.TabIndex = 3;
+            this.ValorLabel.Text = "Valor";
+            // 
             // EstudianteTextBox
             // 
             this.EstudianteTextBox.Location = new System.Drawing.Point(132, 96);
@@ -132,74 +202,6 @@
             this.FechaDateTimePicker.Name = "FechaDateTimePicker";
             this.FechaDateTimePicker.Size = new System.Drawing.Size(155, 22);
             this.FechaDateTimePicker.TabIndex = 7;
-            // 
-            // ValorLabel
-            // 
-            this.ValorLabel.AutoSize = true;
-            this.ValorLabel.Location = new System.Drawing.Point(22, 38);
-            this.ValorLabel.Name = "ValorLabel";
-            this.ValorLabel.Size = new System.Drawing.Size(41, 17);
-            this.ValorLabel.TabIndex = 3;
-            this.ValorLabel.Text = "Valor";
-            // 
-            // LogradoLabel
-            // 
-            this.LogradoLabel.AutoSize = true;
-            this.LogradoLabel.Location = new System.Drawing.Point(158, 38);
-            this.LogradoLabel.Name = "LogradoLabel";
-            this.LogradoLabel.Size = new System.Drawing.Size(61, 17);
-            this.LogradoLabel.TabIndex = 4;
-            this.LogradoLabel.Text = "Logrado";
-            // 
-            // PerdidoLabel
-            // 
-            this.PerdidoLabel.AutoSize = true;
-            this.PerdidoLabel.Location = new System.Drawing.Point(331, 38);
-            this.PerdidoLabel.Name = "PerdidoLabel";
-            this.PerdidoLabel.Size = new System.Drawing.Size(57, 17);
-            this.PerdidoLabel.TabIndex = 5;
-            this.PerdidoLabel.Text = "Perdido";
-            // 
-            // ValorTextBox
-            // 
-            this.ValorTextBox.Location = new System.Drawing.Point(25, 76);
-            this.ValorTextBox.Name = "ValorTextBox";
-            this.ValorTextBox.Size = new System.Drawing.Size(83, 22);
-            this.ValorTextBox.TabIndex = 6;
-            // 
-            // LogradoTextBox
-            // 
-            this.LogradoTextBox.Location = new System.Drawing.Point(161, 76);
-            this.LogradoTextBox.Name = "LogradoTextBox";
-            this.LogradoTextBox.Size = new System.Drawing.Size(83, 22);
-            this.LogradoTextBox.TabIndex = 7;
-            // 
-            // PerdidoTextBox
-            // 
-            this.PerdidoTextBox.Location = new System.Drawing.Point(334, 76);
-            this.PerdidoTextBox.Name = "PerdidoTextBox";
-            this.PerdidoTextBox.ReadOnly = true;
-            this.PerdidoTextBox.Size = new System.Drawing.Size(83, 22);
-            this.PerdidoTextBox.TabIndex = 8;
-            this.PerdidoTextBox.TextChanged += new System.EventHandler(this.PerdidoTextBox_TextChanged);
-            // 
-            // SignoMenosLabel
-            // 
-            this.SignoMenosLabel.AutoSize = true;
-            this.SignoMenosLabel.Location = new System.Drawing.Point(130, 79);
-            this.SignoMenosLabel.Name = "SignoMenosLabel";
-            this.SignoMenosLabel.Size = new System.Drawing.Size(13, 17);
-            this.SignoMenosLabel.TabIndex = 9;
-            this.SignoMenosLabel.Text = "-";
-            // 
-            // SignoIgualLabel
-            // 
-            this.SignoIgualLabel.AutoSize = true;
-            this.SignoIgualLabel.Location = new System.Drawing.Point(278, 79);
-            this.SignoIgualLabel.Name = "SignoIgualLabel";
-            this.SignoIgualLabel.Size = new System.Drawing.Size(16, 17);
-            this.SignoIgualLabel.TabIndex = 10;
-            this.SignoIgualLabel.Text = "=";
             // 
             // PorComoLabel
             // 
