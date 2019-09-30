@@ -101,7 +101,7 @@ namespace Parcial1_Ap1.UI.Registros
 
             if(Convert.ToDecimal(ValorTextBox.Text) <= 0)
             {
-                MyErrorProvider.SetError(ValorTextBox, "El campo valor no puede ser menor que cero o igual a cero");
+                MyErrorProvider.SetError(ValorTextBox, "El campo valor no puede ser menor o igual que cero");
                 ValorTextBox.Focus();
                 paso = false;
             }

@@ -18,7 +18,7 @@ namespace Parcial1_Ap1.BLL.Tests
             bool paso = false;
             Evaluacion evaluacion = new Evaluacion();
             evaluacion.Estudiante = "Martinsito";
-            evaluacion.EvaluacionId = 8;
+            evaluacion.EvaluacionId = 1;
             evaluacion.Valor = 31;
             evaluacion.Logrado = 26;
             evaluacion.Perdido = 5;
@@ -34,7 +34,7 @@ namespace Parcial1_Ap1.BLL.Tests
             bool paso = false;
             Evaluacion evaluacion = new Evaluacion();
             evaluacion.Estudiante = "Martinsito";
-            evaluacion.EvaluacionId = 2;
+            evaluacion.EvaluacionId = 1;
             evaluacion.Valor = 31;
             evaluacion.Logrado = 30;
             evaluacion.Perdido = 5;
@@ -48,7 +48,7 @@ namespace Parcial1_Ap1.BLL.Tests
         public void EliminarTest()
         {
             bool paso = false;
-            paso = EvaluacionBLL.Eliminar(2);
+            paso = EvaluacionBLL.Eliminar(1);
             Assert.AreEqual(paso, true);
         }
 

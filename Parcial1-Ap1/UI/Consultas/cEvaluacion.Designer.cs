@@ -62,7 +62,7 @@
             // FiltroLabel
             // 
             this.FiltroLabel.AutoSize = true;
-            this.FiltroLabel.Location = new System.Drawing.Point(317, 18);
+            this.FiltroLabel.Location = new System.Drawing.Point(335, 18);
             this.FiltroLabel.Name = "FiltroLabel";
             this.FiltroLabel.Size = new System.Drawing.Size(39, 17);
             this.FiltroLabel.TabIndex = 2;
@@ -71,7 +71,7 @@
             // CriterioLabel
             // 
             this.CriterioLabel.AutoSize = true;
-            this.CriterioLabel.Location = new System.Drawing.Point(479, 18);
+            this.CriterioLabel.Location = new System.Drawing.Point(493, 18);
             this.CriterioLabel.Name = "CriterioLabel";
             this.CriterioLabel.Size = new System.Drawing.Size(53, 17);
             this.CriterioLabel.TabIndex = 3;
@@ -80,17 +80,17 @@
             // DesdeDateTimePicker
             // 
             this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DesdeDateTimePicker.Location = new System.Drawing.Point(21, 49);
+            this.DesdeDateTimePicker.Location = new System.Drawing.Point(21, 51);
             this.DesdeDateTimePicker.Name = "DesdeDateTimePicker";
-            this.DesdeDateTimePicker.Size = new System.Drawing.Size(95, 22);
+            this.DesdeDateTimePicker.Size = new System.Drawing.Size(118, 22);
             this.DesdeDateTimePicker.TabIndex = 4;
             // 
             // HastaDateTimePicker
             // 
             this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.HastaDateTimePicker.Location = new System.Drawing.Point(170, 49);
+            this.HastaDateTimePicker.Location = new System.Drawing.Point(170, 51);
             this.HastaDateTimePicker.Name = "HastaDateTimePicker";
-            this.HastaDateTimePicker.Size = new System.Drawing.Size(95, 22);
+            this.HastaDateTimePicker.Size = new System.Drawing.Size(124, 22);
             this.HastaDateTimePicker.TabIndex = 5;
             // 
             // FiltroComboBox
@@ -101,14 +101,14 @@
             "Id",
             "Estudiante",
             "Pronostico"});
-            this.FiltroComboBox.Location = new System.Drawing.Point(320, 47);
+            this.FiltroComboBox.Location = new System.Drawing.Point(338, 49);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(121, 24);
             this.FiltroComboBox.TabIndex = 6;
             // 
             // CriterioTextBox
             // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(482, 47);
+            this.CriterioTextBox.Location = new System.Drawing.Point(496, 51);
             this.CriterioTextBox.Name = "CriterioTextBox";
             this.CriterioTextBox.Size = new System.Drawing.Size(122, 22);
             this.CriterioTextBox.TabIndex = 7;
@@ -152,7 +152,7 @@
             this.Controls.Add(this.HastaLabel);
             this.Controls.Add(this.DesdeLabel);
             this.Name = "cEvaluacion";
-            this.Text = "cEvaluacion";
+            this.Text = "Evaluacion";
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
